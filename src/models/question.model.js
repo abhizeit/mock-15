@@ -6,7 +6,7 @@ const questionSchema = new mongoose.Schema({
   difficulty: String,
   question: String,
   correct_answer: String,
-  incorrect_answers: Array,
+  incorrect_answers: [String],
 });
 
 const Question = mongoose.model("question", questionSchema);
